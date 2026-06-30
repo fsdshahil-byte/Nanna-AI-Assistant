@@ -1,0 +1,15 @@
+# NANNA AI - Robots.txt
+# https://nanna-ai.com
+
+User-agent: *
+Allow: /
+
+# Disallow private API routes (if exposed)
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://nanna-ai.com/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 10

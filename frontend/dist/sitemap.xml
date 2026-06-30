@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Application -->
+  <url>
+    <loc>https://nanna-ai.com/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Note: Since this is a SPA, all routes are client-side -->
+  <!-- Search engines will discover these through the main app -->
+  <!-- Additional URLs can be added as the app grows -->
+</urlset>

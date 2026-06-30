@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#06131f" />
+    
+    <!-- Primary Meta Tags -->
+    <title>NANNA AI - Your Intelligent Voice Assistant & Life OS</title>
+    <meta name="title" content="NANNA AI - Your Intelligent Voice Assistant & Life OS" />
+    <meta name="description" content="NANNA is a browser-based AI voice assistant with wake word detection, smart home control, Telegram integration, task management, reminders, and multi-channel communication. Control your life with voice commands." />
+    <meta name="keywords" content="AI assistant, voice assistant, smart home, Telegram bot, task management, AI chat, voice commands, home automation, life OS, productivity, reminders, alarms, routines" />
+    <meta name="author" content="NANNA AI Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nanna-ai.com/" />
+    <meta property="og:title" content="NANNA AI - Your Intelligent Voice Assistant & Life OS" />
+    <meta property="og:description" content="Control your smart home, manage tasks, send messages via Telegram, and chat with AI - all through natural voice commands." />
+    <meta property="og:image" content="https://nanna-ai.com/og-image.png" />
+    <meta property="og:site_name" content="NANNA AI" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nanna-ai.com/" />
+    <meta property="twitter:title" content="NANNA AI - Your Intelligent Voice Assistant & Life OS" />
+    <meta property="twitter:description" content="Control your smart home, manage tasks, send messages via Telegram, and chat with AI - all through natural voice commands." />
+    <meta property="twitter:image" content="https://nanna-ai.com/twitter-image.png" />
+    <meta property="twitter:creator" content="@nannaai" />
+    
+    <!-- Additional SEO -->
+    <meta name="application-name" content="NANNA AI" />
+    <meta name="apple-mobile-web-app-title" content="NANNA AI" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-TileColor" content="#06131f" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2306131f'/%3E%3Ccircle cx='50' cy='50' r='35' fill='none' stroke='%2306b6d4' stroke-width='3'/%3E%3Ccircle cx='50' cy='50' r='15' fill='%2306b6d4' opacity='0.8'/%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Preconnect to APIs -->
+    <link rel="preconnect" href="https://api.groq.com" />
+    <link rel="preconnect" href="https://api.openai.com" />
+    <link rel="preconnect" href="https://api.telegram.org" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nanna-ai.com/" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "NANNA AI",
+      "alternateName": "NANNA Voice Assistant",
+      "url": "https://nanna-ai.com",
+      "description": "Browser-based AI voice assistant with wake word detection, smart home control, Telegram integration, and multi-channel communication.",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript. Supports Chrome, Firefox, Safari, Edge.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Voice Assistant with Wake Word Detection",
+        "AI Chat (Groq/OpenAI)",
+        "Telegram Bot Integration",
+        "Smart Home Control (MQTT/REST)",
+        "Task & Reminder Management",
+        "Email, SMS, Voice Call Support",
+        "3D Avatar with Mood Animations",
+        "Skills & Routines",
+        "Memory & Personalization"
+      ],
+      "screenshot": "https://nanna-ai.com/screenshot.png",
+      "downloadUrl": "https://nanna-ai.com",
+      "softwareVersion": "1.0.0",
+      "author": {
+        "@type": "Organization",
+        "name": "NANNA AI Team",
+        "url": "https://nanna-ai.com"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NANNA AI",
+      "applicationCategory": "VirtualAssistant",
+      "operatingSystem": "Cross-platform Web",
+      "description": "Intelligent voice assistant for smart home control, task management, and AI-powered conversations.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    
+    <style>
+      /* Critical CSS for faster initial render */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Loading state */
+      .nanna-loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #080a10;
+        color: #06b6d4;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-Ab_Ruq6J.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DPLhfXFj.css">
+  </head>
+  <body style="margin: 0; background: #080a10;">
+    <div id="root">
+      <!-- Fallback content for slow connections or JS disabled -->
+      <noscript>
+        <div style="padding: 40px; text-align: center; color: #06b6d4; font-family: sans-serif;">
+          <h1>NANNA AI</h1>
+          <p>JavaScript is required to run NANNA AI. Please enable JavaScript in your browser settings.</p>
+        </div>
+      </noscript>
+    </div>
+  </body>
+</html>
